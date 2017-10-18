@@ -781,3 +781,57 @@ a
 			line-height 2.4rem
 			margin-top 10px
 /*  </why-we>  */
+
+/*  <articles>  */
+.articles
+	padding-top 50px
+	.page-background
+		margin-top 30px
+	&__loadmore
+		background-color #3b3b3b
+		padding 50px 15px 100px
+		margin 50px -15px -40px
+		.btn
+			height 72px
+			border-radius (@height / 2)
+.article
+	&__item
+		margin-bottom 80px
+		&:last-child
+			margin-bottom 0
+		&-pic
+			margin-bottom 30px
+			img
+				width 100%
+		&-name
+			color #fff
+			font-weight 500
+			font-size 2.8rem
+			font-family fontFira
+			margin-bottom 20px
+		&-info
+			color #a7a7a7
+			font-weight 600
+			font-size 1.6rem
+			margin-bottom 30px
+			time
+				&:after
+					margin 0 12px
+					content '|'
+		&-text
+			display none
+		&-readmore
+			text-align center
+			a
+				display inline-block
+				width 195px
+				height 40px
+				color #d1d1d1
+				font-weight 600
+				font-size 2rem
+				line-height 36px
+				text-align center
+				background-color #4b4b4b
+				border 2px solid #9a7500
+				border-radius (@height / 2)
+/*  </articles>  */
