@@ -52,7 +52,7 @@
 	});
 
 	$('.js-about-us').each(function() {
-		var showChar = 310;
+		var showChar = $(this).data('symbols');
 		var content = $(this).html();
 		if(content.length > showChar) {
 			var c = content.substr(0, showChar);
@@ -67,6 +67,14 @@
 		$(this).next().removeClass('about-us__hidden');
 	});
 
+	$('.js-scrollto').click(function(e) {
+		e.preventDefault();
+		var thisHref = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(thisHref).offset().top
+		}, 500);
+	});
+
 	$('.rocket').click(function(e) {
 		e.preventDefault();
 		$('.header__stars').addClass('pushing');
@@ -74,7 +82,5 @@
 			$('.header__stars').removeClass('pushing');
 		}, 2000);
 	});
-
-	console.log('%c Верстка: mdss@makexhtml.ru ', 'color:#fff;font-size:1.2rem;background-color:#3469c6;')
 
 })(jQuery);

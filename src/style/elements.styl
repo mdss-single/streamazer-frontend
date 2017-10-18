@@ -1,4 +1,7 @@
-@require "system.styl"
+/*  <vars>  */
+fontFira = 'Fira Sans Condensed';
+fontOpen = 'Open Sans';
+/*  </vars>  */
 
 /*  <text>  */
 .page-title
@@ -32,12 +35,38 @@
 	border 0
 	border-radius (@height / 2)
 	padding 0 37px
-	box-shadow 4px 8px 9px rgba(#684e00, .42)
+	box-shadow 4px 5px 4px rgba(#684e00, .42)
 	transition all .2s
+	^[0]&--blue
+		background-color #71aed2
+		box-shadow 4px 5px 4px rgba(#23678f, .42)
+		&:hover
+		&:active
+			background-color #72c9ff
+	^[0]&--green
+		background-color #36c13c
+		box-shadow 4px 5px 4px rgba(#0c7811, .42)
+		&:hover
+		&:active
+			background-color #51ec4f
 	&:hover
+	&:active
 		text-decoration none
 		background-color #fbc10a
-a.btn
-	display inline-block
-	line-height 54px
+	a^[0]
+		display inline-block
+		line-height 54px
 /*  </buttons>  */
+
+/*  <animations>  */
+@keyframes stars
+	from
+		transform translate3d(0, 0, 0)
+	to
+		transform translate3d(-1920px, 0, 0)
+@keyframes fade
+	from
+		opacity 0
+	to
+		opacity 1
+/*  </animations>  */
