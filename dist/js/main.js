@@ -57,7 +57,7 @@
 		if(content.length > showChar) {
 			var c = content.substr(0, showChar);
 			var h = content.substr(showChar, content.length - showChar);
- 			var html = c + '<a href="#" class="about-us__more"><span class="about-us__more--underline">Читать полностью</span></a>' + '<div class="about-us__hidden">' + h + '</div>';
+ 			var html = c + '<a href="#" class="about-us__more"><span class="about-us__more--underline">Читать полностью</span></a>' + '<div class="about-us__added about-us__hidden">' + h + '</div>';
  			$(this).html(html);
 		}
  	});
@@ -73,6 +73,10 @@
 		$('html, body').animate({
 			scrollTop: $(thisHref).offset().top
 		}, 500);
+	});
+
+	$('.js-faq-item').click(function() {
+		$(this).closest('.faq__item').toggleClass('faq__item--active');
 	});
 
 	$('.rocket').click(function(e) {
