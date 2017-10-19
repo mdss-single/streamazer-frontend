@@ -281,4 +281,96 @@
 		&__item
 			width 48%
 			margin-top 55px
+	.articles
+		&__items
+			column-count 2
+			column-gap 30px
+		&__loadmore
+			.btn
+				width auto
+				padding 0 55px
+	.article
+		&__item
+			position relative
+			background-color #5f5f5f
+			border solid #696969
+			border-width 5px 5px 0
+			margin-bottom 30px
+			box-shadow 0 5px 10px rgba(#000, .19)
+			-webkit-column-break-inside avoid
+			page-break-inside avoid
+			break-inside avoid
+			&-name
+				padding 0 30px
+			&-info
+				padding 0 30px
+			&-readmore
+				position relative
+				text-align left
+				background-color #696969
+				padding 16px 30px 21px
+				&:before
+					position absolute
+					right -5px
+					bottom 0
+					left -5px
+					height 5px
+					background-color #d9a501
+					content ''
+				a
+					width auto
+					height 49px
+					line-height 45px
+					border-radius (@height / 2)
+					padding 0 26px
+					box-shadow 0 4px 2px rgba(#2f2f2f, .28)
+					&:hover
+						color #000
+						text-decoration none
+						background-color #fbc10a
+						border-color @background-color
+						box-shadow 0 4px 2px rgba(#684e00, .42)
+	.blog
+		margin-top 30px
+		&__item
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			margin-bottom 50px
+			&-pic
+				width 228px
+			&-main
+				flex 1
+				margin-left 30px
+			&-title
+				margin -8px 0 20px
+			&-info
+				margin-bottom 20px
+			&-text
+				display block
+				color #e0e0e0
+				font-size 1.6rem
+				line-height 2.4rem
+				margin-bottom 20px
+			&-readmore
+				text-align left
+				a
+					width auto
+					height 49px
+					line-height 45px
+					border-radius (@height / 2)
+					padding 0 26px
+					box-shadow 0 4px 2px rgba(#2f2f2f, .28)
+					&:hover
+						color #000
+						text-decoration none
+						background-color #fbc10a
+						border-color @background-color
+						box-shadow 0 4px 2px rgba(#684e00, .42)
+		&__loadmore
+			.btn
+				width auto
+				padding 0 55px
 /*  </768px>  */
