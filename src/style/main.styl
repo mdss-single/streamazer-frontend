@@ -146,17 +146,6 @@ a
 	^[0]&--home
 		&:before
 			background url('../i/header-mobile-planets-home.png') no-repeat 0 0 / cover
-		.header__register-link
-			top 490px
-			&:before
-				position absolute
-				top -60px
-				left 50%
-				width 2px
-				height 40px
-				background-color #684f00
-				content ''
-				transform translateX(-50%)
 	&__stars
 		position absolute
 		top 0
@@ -239,7 +228,6 @@ a
 		right 15px
 		left 15px
 		text-align center
-		filter "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12,Color='#444')"
 		filter drop-shadow(5px 5px 3px rgba(#000, .84))
 	&__nav
 		display none
@@ -328,6 +316,17 @@ a
 		border 2px solid #bb8e00
 		border-radius (@height / 2)
 		box-shadow 0 14px 21px rgba(#846505, .29)
+		&--home
+			top 490px
+			&:before
+				position absolute
+				top -60px
+				left 50%
+				width 2px
+				height 40px
+				background-color #684f00
+				content ''
+				transform translateX(-50%)
 		span
 			display none
 /*  </header>  */
@@ -337,6 +336,8 @@ a
 	flex-shrink 0
 	height 292px
 	background-color #000
+	.full
+		height @height
 	&__logo
 		display none
 	&__copyright
@@ -351,11 +352,14 @@ a
 		display flex
 		flex-wrap wrap
 		justify-content space-between
+		position absolute
+		top 46px
+		left 50%
 		width 232px
 		color #7f7f7f
 		font-size 1.6rem
 		text-align center
-		margin 46px auto 35px
+		transform translateX(-50%)
 		&-title
 			width 100%
 			margin 0 0 10px
@@ -363,7 +367,7 @@ a
 			position relative
 			&:hover
 				&:before
-					animation fade .5s
+					animation fade .8s
 					position absolute
 					top 0
 					right 0
@@ -406,8 +410,11 @@ a
 		display flex
 		flex-wrap wrap
 		justify-content space-between
+		position absolute
+		top 140px
+		left 50%
 		width 174px
-		margin auto
+		transform translateX(-50%)
 		&-title
 			width 100%
 			color #7e7e7e
@@ -416,6 +423,7 @@ a
 			margin 0 0 10px
 		&-item
 			width 40px
+			height 24px
 			opacity .75
 			margin-bottom 4px
 			transition all .2s
@@ -735,6 +743,7 @@ a
 				transition all .2s
 	&__added
 		display inline
+		animation fade .5s
 	&__hidden
 		display none
 /*  </about-us>  */
@@ -926,3 +935,4 @@ a
 				display block
 				animation fade .5s
 /*  </faq>  */
+@require "adaptive.styl"

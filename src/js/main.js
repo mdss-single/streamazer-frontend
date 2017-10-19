@@ -2,6 +2,7 @@
 	"use strict";
 
 	$('.header__lang').click(function() {
+		$(this).toggleClass('header__lang--active');
 		$(this).find('.header__lang-list').toggleClass('header__lang-list--active');
 	});
 
@@ -48,6 +49,7 @@
 
 	$('.js-pricing').flickity({
 		cellSelector: '.pricing__item',
+		cellAlign: 'left',
 		pageDots: false
 	});
 
