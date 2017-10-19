@@ -393,4 +393,61 @@
 					content ''
 					transform translateY(-50%)
 					transition all .2s
+	.pricing
+		&__nav
+			padding 50px 0 60px
+			&:before
+				z-index 3
+		&__scrollto
+			width auto
+			text-align center
+			&-item
+				display inline-block
+				width 158px
+				height 49px
+				line-height 45px
+				margin 0 15px
+		&__section
+			&--day
+				& ^[1]-title
+					&:after
+						background-color #303030
+			&--week
+				& ^[1]-title
+					&:after
+						background-color #2a2a2a
+			&--month
+				& ^[1]-title
+					&:after
+						background-color #242424
+			&-title
+				position relative
+				overflow hidden
+				margin 0 0 -15px
+				&:after
+					position absolute
+					top 0
+					right 0
+					bottom 0
+					width 64px
+					content ''
+				span
+					position relative
+					&:before
+					&:after
+						position absolute
+						top 50%
+						width calc(1000% - 30px)
+						height 9px
+						border solid #3b3b3b
+						border-width 2px 0
+						content ''
+						transform translateY(-50%)
+					&:before
+						left -1000%
+					&:after
+						right -1000%
+		&__list
+			.flickity-prev-next-button
+				top -76px
 /*  </768px>  */

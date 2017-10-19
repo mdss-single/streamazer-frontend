@@ -486,12 +486,24 @@ a
 			border-radius 25px
 			margin-top 19px
 			box-shadow 2px 2px 0 rgba(#2f2f2f, .64)
+			&:hover
+				color #000
+				text-decoration none
 			&--day
 				border-color #9a7500
+				&:hover
+					background-color #fbc10a
+					border-color @background-color
 			&--week
 				border-color #5992a2
+				&:hover
+					background-color #72c9ff
+					border-color @background-color
 			&--month
 				border-color #339e38
+				&:hover
+					background-color #51ec4f
+					border-color @background-color
 	&__section
 		position relative
 		padding 34px 15px 123px
@@ -939,4 +951,5 @@ a
 				display block
 				animation fade .5s
 /*  </faq>  */
-@require "adaptive.styl"
+@require "_adaptive.styl"
+@require "_elements.styl"
