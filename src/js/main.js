@@ -53,21 +53,23 @@
 		pageDots: false
 	});
 
-	$('.js-about-us').each(function() {
-		var showChar = $(this).data('symbols');
-		var content = $(this).html();
-		if(content.length > showChar) {
-			var c = content.substr(0, showChar);
-			var h = content.substr(showChar, content.length - showChar);
- 			var html = c + '<a href="#" class="about-us__more"><span class="about-us__more--underline">Читать полностью</span></a>' + '<div class="about-us__added about-us__hidden">' + h + '</div>';
- 			$(this).html(html);
-		}
- 	});
- 	$('.about-us__more').click(function(e){
- 		e.preventDefault();
-		$(this).hide();
-		$(this).next().removeClass('about-us__hidden');
-	});
+	if ($(window).width() < 768) {
+		$('.js-about-us').each(function() {
+			var showChar = $(this).data('symbols');
+			var content = $(this).html();
+			if(content.length > showChar) {
+				var c = content.substr(0, showChar);
+				var h = content.substr(showChar, content.length - showChar);
+	 			var html = c + '<a href="#" class="about-us__more"><span class="about-us__more--underline">Читать полностью</span></a>' + '<div class="about-us__added about-us__hidden">' + h + '</div>';
+	 			$(this).html(html);
+			}
+	 	});
+	 	$('.about-us__more').click(function(e){
+			e.preventDefault();
+			$(this).hide();
+			$(this).next().removeClass('about-us__hidden');
+		});
+	}
 
 	$('.js-scrollto').click(function(e) {
 		e.preventDefault();

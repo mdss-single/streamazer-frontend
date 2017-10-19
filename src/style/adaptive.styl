@@ -373,4 +373,24 @@
 			.btn
 				width auto
 				padding 0 55px
+	.faq
+		&__item
+			&--active
+				& ^[1]-question
+					&:before
+						background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAMAAAB4p3UoAAAAWlBMVEUAAAAAAAAAAAAAAAD////////////Ozs7////////a2tr////Dw8P///8AAAAAAAD////////////U1NT////m5ub///////////////////////8AAAD///9QCeNTAAAAHXRSTlMAEwMK6u/jLufcOTQnJBQP4dc5NSwe0ZuWQDApFxjTWoQAAABvSURBVAjXRcpJEsMgDERRCYQAm8Fj5tz/mlGBg3rxF68a4L6BbntIVjcPmN1Nekb3GhBPAGPTQkeDg2KyBkxFzyELvIkTVhGL6ANnyIE9onwa7bQ8mS7oNLkv7R0GrVMHJSwNlMqndFCqFyiZP/wA/IADmuWjWIcAAAAASUVORK5CYII=')
+						transform translateY(-50%) rotate(180deg)
+			&-question
+				position relative
+				padding 15px 40px 15px 45px
+				&:before
+					position absolute
+					top 50%
+					right 12px
+					width 17px
+					height 13px
+					background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAMAAAB4p3UoAAAAUVBMVEUAAAAAAAAAAADCwsLCwsLCwsIAAACmpqYAAADCwsLCwsLCwsKgoKDCwsLCwsKVlZXCwsIAAADCwsLCwsKbm5vCwsLCwsLCwsKvr6+urq7CwsL4Q/3IAAAAGnRSTlMAEgrq4+8HORTf2zgyMSsnJA/n0y2blkAfHTzaL9IAAABqSURBVAjXRchZEoUgDETRDoQIOADqG/e/UK2Ipj9udR3gNcI2vs9sYTYI29lvfmgO+QeIK8kvCotPxQmk0c5rVeBCTQBHNK1cUZl3Igdc5NOH/aTQaQh/PygY5Q5GFBWMYowXGLUONrnPAdsoAzICrCBWAAAAAElFTkSuQmCC')
+					content ''
+					transform translateY(-50%)
+					transition all .2s
 /*  </768px>  */
