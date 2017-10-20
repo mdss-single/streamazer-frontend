@@ -507,7 +507,6 @@ a
 	&__section
 		position relative
 		padding 34px 15px 123px
-		margin 0 -15px
 		&--day
 			background-color #303030
 			& ^[1]-title
@@ -517,6 +516,12 @@ a
 				span
 					&:before
 						background-color @color
+			& .flickity-prev-next-button
+				.arrow
+					transition all .2s
+				&:hover
+					.arrow
+						fill #dba601
 			& ^[0]__item-cost
 				color #f5c734
 		&--week
@@ -528,6 +533,12 @@ a
 				span
 					&:before
 						background-color @color
+			& .flickity-prev-next-button
+				.arrow
+					transition all .2s
+				&:hover
+					.arrow
+						fill #91d3fc
 			& ^[0]__item-cost
 				color #98d3f8
 		&--month
@@ -539,6 +550,12 @@ a
 				span
 					&:before
 						background-color @color
+			& .flickity-prev-next-button
+				.arrow
+					transition all .2s
+				&:hover
+					.arrow
+						fill #51ec4f
 			& ^[0]__item-cost
 				color #7fde84
 		&-title

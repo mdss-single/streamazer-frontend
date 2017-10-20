@@ -62,7 +62,7 @@
 			& ^[0]__lang
 				display block
 				top 50px
-				right 176px
+				right 166px
 				left auto
 				width 45px
 				height auto
@@ -167,6 +167,11 @@
 			left 15px
 		&__menu
 			top 36px
+			width 134px
+			padding-left 50px
+			&:before
+			&:after
+				left 17px
 		&__lang
 			display none
 		&__register-link
@@ -200,12 +205,12 @@
 				margin 0
 		&__social
 			top 44px
-			left 390px
+			left calc(100% - 354px)
 			text-align left
 			transform none
 		&__payment
 			top 140px
-			left 390px
+			left calc(100% - 354px)
 			width 348px
 			transform none
 			&-title
@@ -341,6 +346,7 @@
 			margin-bottom 50px
 			&-pic
 				width 228px
+				margin-bottom 0
 			&-main
 				flex 1
 				margin-left 30px
@@ -451,3 +457,113 @@
 			.flickity-prev-next-button
 				top -76px
 /*  </768px>  */
+
+/*  <992>  */
+@media screen and (min-width:992px)
+	.header
+		^[0]&--home
+			&:before
+				background-image url('../i/header-planets-992-home.png')
+				background-size 100% auto
+			& ^[0]__bg
+				&:after
+					width 228px
+					height 213px
+		&:before
+			background-image url('../i/header-planets-992.png')
+		&:after
+			background-position 0 0
+		&__bg
+			&:before
+				top -100px
+				left 50%
+		&__slogan
+			&--home
+				font-size 6.8rem
+				text-align center
+				& ^[1]--ready
+					display inline
+					font-weight 400
+		&__description
+			display block
+			position absolute
+			top 30px
+			left 400px
+			width 340px
+			color #afafaf
+			font-size 2.7rem
+			font-family fontFira
+			margin 0
+			&--home
+				top 315px
+				left 15px
+				width auto
+				font-size 3.8rem
+	.footer
+		&__social
+			left calc(100% - 425px)
+		&__payment
+			left calc(100% - 425px)
+	.pricing
+		&__list
+			.flickity-prev-next-button
+				top -76px
+			.home-pricing & .flickity-prev-next-button
+				top -103px
+		&__item
+			width calc(33.33% - 20px)
+	.why-we
+		&__item
+			width 410px
+	.article
+		&__item
+			&-text
+				display block
+				color #e0e0e0
+				font-size 1.6rem
+				line-height 2.4rem
+				padding 0 30px
+				margin-bottom 40px
+			&-readmore
+				&:after
+					position absolute
+					top 50%
+					right 0
+					left 240px
+					height 9px
+					border solid #5f5f5f
+					border-width 2px 0
+					content ''
+					transform translateY(-50%)
+	.blog
+		&__item
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			background-color #5f5f5f
+			border 5px solid #696969
+			&-pic
+				position relative
+				overflow hidden
+				width 375px
+				img
+					position absolute
+					top 0
+					bottom 0
+					left 50%
+					width auto
+					height 100%
+					max-width none
+					transform translateX(-50%)
+			&-main
+				margin 20px 30px 25px
+			&-title
+				margin -4px 0 20px
+			&-readmore
+				a
+					height 41px
+					line-height 37px
+					padding 0 22px
+/*  </992>  */
