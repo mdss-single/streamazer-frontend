@@ -393,6 +393,7 @@
 					position absolute
 					top 50%
 					right 12px
+					z-index 2
 					width 17px
 					height 13px
 					background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAMAAAB4p3UoAAAAUVBMVEUAAAAAAAAAAADCwsLCwsLCwsIAAACmpqYAAADCwsLCwsLCwsKgoKDCwsLCwsKVlZXCwsIAAADCwsLCwsKbm5vCwsLCwsLCwsKvr6+urq7CwsL4Q/3IAAAAGnRSTlMAEgrq4+8HORTf2zgyMSsnJA/n0y2blkAfHTzaL9IAAABqSURBVAjXRchZEoUgDETRDoQIOADqG/e/UK2Ipj9udR3gNcI2vs9sYTYI29lvfmgO+QeIK8kvCotPxQmk0c5rVeBCTQBHNK1cUZl3Igdc5NOH/aTQaQh/PygY5Q5GFBWMYowXGLUONrnPAdsoAzICrCBWAAAAAElFTkSuQmCC')
@@ -544,6 +545,7 @@
 			display flex
 			background-color #5f5f5f
 			border 5px solid #696969
+			box-shadow 0 5px 10px rgba(#000, .19)
 			&-pic
 				position relative
 				overflow hidden
@@ -567,3 +569,391 @@
 					line-height 37px
 					padding 0 22px
 /*  </992>  */
+
+/*  <1200>  */
+@media screen and (min-width:1200px)
+	.header
+		height 388px
+		^[0]&--home
+			height 656px
+			&:before
+				background-image url('../i/header-planets-big-home.png')
+				background-position center 0
+				background-size auto
+			&:after
+				height 70px
+				background-position 0 0
+			& ^[0]__bg
+				&:after
+					right auto
+					left calc(50% + 265px)
+			& ^[0]__lang
+				right 136px
+		&:before
+			background-image url('../i/header-planets-big.png')
+			background-position center 0
+		&:after
+			height 44px
+			background-position 300px 0
+		&__bg
+			&:before
+				top 40px
+			&:after
+				position absolute
+				bottom 14px
+				left calc(50% + 125px)
+				z-index 3
+				width 100px
+				height 90px
+				background url('../i/header-guy.png') no-repeat 0 0 / 100% auto
+				content ''
+		&__menu
+			display none
+		&__nav
+			display block
+			position absolute
+			top 50px
+			left 375px
+			&-item
+				position relative
+				color #c8c8c8
+				font-weight 600
+				font-size 2.1rem
+				padding-left 16px
+				margin-right 40px
+				&:before
+					position absolute
+					top 50%
+					left 0
+					width 10px
+					height @width
+					border solid #e3ad01
+					border-width 0 2px 2px 0
+					content ''
+					transform rotate(-45deg) translateY(-50%)
+				&:after
+					transition all .2s
+				&:hover
+					text-decoration none
+					&:after
+						position absolute
+						bottom -3px
+						right 0
+						left 16px
+						height 1px
+						background-color #dba601
+						content ''
+		&__lang
+			display block
+			top 52px
+			right 136px
+			left auto
+			width 45px
+			height auto
+			line-height 1
+			background none
+			border 0
+			cursor pointer
+			box-shadow none
+			&--active
+				.header__lang-current
+					color #fff
+					&:after
+						position absolute
+						bottom 0
+						right 0
+						left 16px
+						height 1px
+						background-color #dba601
+						content ''
+			&-list
+				margin-top 6px
+			&-item
+				&:hover
+					color #fff
+					text-decoration none
+					&:after
+						background-color #dba601
+				&:after
+					position absolute
+					bottom 0
+					right 0
+					left 16px
+					height 1px
+					background-color #7d5e01
+					content ''
+		&__login-link
+			display block
+			position absolute
+			top 44px
+			right 15px
+			height 39px
+			color #fff3cd
+			font-weight 600
+			font-size 2.2rem
+			line-height 35px
+			background-color rgba(#000, .6)
+			border 2px solid #bb8e00
+			border-radius (@height / 2)
+			padding 0 20px
+			box-shadow 0 14px 21px rgba(#846505, .29)
+			&:hover
+				color #000
+				text-decoration none
+				background-color #dba601
+				border-color #dba601
+		&__slogan
+			display block
+			position absolute
+			top 190px
+			left 84px
+			width 280px
+			color #ab8200
+			font-size 3.4rem
+			font-family fontFira
+			text-align center
+			margin 0
+			&--home
+				top 210px
+				right 15px
+				left 15px
+				width auto
+				font-size 6.8rem
+		&__description
+			top 190px
+			left 390px
+			width 486px
+			color #909090
+			font-weight 300
+			font-size 3.4rem
+			text-align center
+			&:before
+			&:after
+				position absolute
+				top 10px
+				bottom @top
+				width 1px
+				background-color #555
+				content ''
+			&:before
+				left 0
+			&:after
+				right 0
+			&--youtube
+				color #909090
+				font-weight 400
+			&--home
+				top 315px
+				right 15px
+				left 15px
+				width auto
+				color #afafaf
+				font-weight 400
+				font-size 3.8rem
+				&:before
+				&:after
+					display none
+				& ^[1]--youtube
+					color #d03030
+					font-weight 500
+		&__register-link
+			display block
+			top 198px
+			right 84px
+			left auto
+			width 184px
+			height auto
+			line-height 3.4rem
+			text-decoration underline
+			text-decoration-color #684f00
+			text-align center
+			background-color transparent
+			border 0
+			box-shadow none
+			span
+				display inline
+			&--home
+				top 416px
+				right auto
+				left 50%
+				width auto
+				height 74px
+				line-height 70px
+				text-decoration none
+				background-color rgba(#000, .6)
+				border 2px solid #bb8e00
+				border-radius (@height / 2)
+				padding 0 34px
+				box-shadow 0 14px 21px rgba(#846505, .29)
+				transform translateX(-50%)
+				&:hover
+					color #000
+					text-decoration none
+					background-color #dba601
+					border-color #dba601
+	.footer
+		&__nav
+			display block
+			position absolute
+			top 30px
+			left 33%
+			&-item
+				display block
+				position relative
+				color #7e7e7e
+				font-weight 600
+				font-size 1.6rem
+				padding-left 26px
+				margin 15px 0
+				&:hover
+					color #fff
+					text-decoration none
+				&:before
+					position absolute
+					top 50%
+					left 0
+					width 10px
+					height @width
+					border solid #e3ad01
+					border-width 0 2px 2px 0
+					content ''
+					transform rotate(-45deg) translateY(-50%)
+		&__social
+		&__payment
+			left 70%
+	.home-pricing
+		.page-title
+			&:after
+				display none
+			span
+				&:after
+					display none
+		&__all
+			top 50px
+			right 0
+			bottom auto
+			left auto
+			&:before
+				position absolute
+				top 50%
+				left -160px
+				width 126px
+				height 17px
+				background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAARCAMAAAAsX+g1AAAAZlBMVEUAAABoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwBoTwC0ySicAAAAIXRSTlMAEe7cIwZzAenTwKeMUkg49OXHrikTtLKjloJqYlU9MRkd5yNxAAAAaklEQVRIx8XSxwGDMBAEwJVPQllk22Tov0neNMBODYN3DeEAkV3baQSRSm6xIBqC38GUJZ4gMrOrDIh0LwVMxf808KFpruYPRVN8qMGie8lgGVPLq28qlxRI7CZRg6XuOuK4KNmC5vscdwP9awUd9LCkDgAAAABJRU5ErkJggg==')
+				content ''
+				transform translateY(-50%)
+			&:hover
+				color #fff
+				span
+					&:before
+						background-color #dba601
+	.pricing
+		&__section
+			padding-bottom 60px
+			&--day
+				background #303030 url('../i/pricing-bg__day.png') no-repeat calc(50% + 750px) calc(50% + 50px)
+			&--week
+				background #2a2a2a url('../i/pricing-bg__week.png') no-repeat calc(50% - 750px) calc(50% + 50px)
+			&--month
+				background #242424 url('../i/pricing-bg__month.png') no-repeat calc(50% + 750px) calc(50% + 50px)
+			&-all
+				display none
+		&__list
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+		&__item
+			width calc(25% - 23px)
+		.home-pricing ^[0]__item
+			width calc(25% - 15px)
+		&__section ^[0]__list
+			display block
+	.why-we
+		background #3b3b3b url('../i/why-we__bg.png') no-repeat center 0
+		&__item
+			width 30%
+			&:nth-child(4)
+				margin-right 30%
+			&:nth-child(6), &:nth-child(7), &:nth-child(8)
+				margin-top 90px
+				margin-bottom 30px
+	.article
+		&__item
+			&-name
+				a
+					&:hover
+						text-decoration-color #dba601
+	.articles, .blog
+		&__loadmore
+			background-color transparent
+	.page-background
+		background-image url('../i/bg.png')
+	.blog
+		&__item
+			&-main
+				margin 40px 63px 0 68px
+			&-title
+				a
+					&:hover
+						text-decoration-color #dba601
+			&-readmore
+				position relative
+				background-color #5a5a5a
+				border-top 1px solid #555
+				padding 16px 0 18px 68px
+				margin 0 -63px 0 -68px
+				&:after
+					position absolute
+					top 50%
+					right 63px
+					left 293px
+					height 9px
+					border solid #525252
+					border-width 1px 0
+					content ''
+					transform translateY(-50%)
+				a
+					height 49px
+					line-height 45px
+	.faq
+		&__items
+			column-count 2
+			column-gap 30px
+		&__item
+			height 70px
+			margin-top 0
+			margin-bottom 10px
+			-webkit-column-break-inside avoid
+			page-break-inside avoid
+			break-inside avoid
+			&^[1]--active
+				height auto
+				& ^[1]-question
+					&:after
+						background-color #3e3e3e
+			&-question
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				align-items center
+				width 100%
+				height 60px
+				background-position 3px center
+				background-size 48px auto
+				padding 0 40px 0 64px
+				&:after
+					position absolute
+					top 0
+					right 0
+					bottom 0
+					z-index 1
+					width 40px
+					background-color #595959
+					content ''
+	.about-us
+		padding-bottom 10px
+/*  </1200>  */
