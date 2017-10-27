@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Streamazer</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400,500,600|Open+Sans:400,600,700&amp;subset=cyrillic">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/plugins.css">
+</head>
+<body>
+	<div class="menu">
+		<a href="#" class="menu__close"></a>
+		<div class="menu__logo"><a href="#"><img src="i/logo.png" alt="streamazer"></a></div>
+		<nav class="menu__nav">
+			<a href="#" class="menu__nav-item">О проекте</a>
+			<a href="#" class="menu__nav-item">FAQ</a>
+			<a href="#" class="menu__nav-item">Тарифы</a>
+			<a href="#" class="menu__nav-item">Контакты</a>
+			<a href="#" class="menu__nav-item">Вход</a>
+			<a href="#" class="menu__nav-item">Регистрация</a>
+		</nav>
+		<div class="menu__lang">
+			<a href="#" class="menu__lang-item menu__lang-item--active">ru</a>
+			<a href="#" class="menu__lang-item">en</a>
+		</div>
+	</div>
+	<header class="header">
+		<div class="header__stars"></div>
+		<div class="header__bg"></div>
+		<div class="full header__main">
+			<a href="#" class="header__menu js-menu-link">Меню</a>
+			<a href="#" class="header__logo"><img src="i/logo.png" alt="streamazer"></a>
+			<nav class="header__nav">
+				<a href="#" class="header__nav-item">О проекте</a>
+				<a href="#" class="header__nav-item">FAQ</a>
+				<a href="#" class="header__nav-item">Тарифы</a>
+				<a href="#" class="header__nav-item">Контакты</a>
+			</nav>
+			<div class="header__lang">
+				<span class="header__lang-current">ru</span>
+				<div class="header__lang-list">
+					<a href="#" class="header__lang-item">en</a>
+				</div>
+			</div>
+			<a href="#" class="header__login-link">Вход</a>
+			<p class="header__slogan">Стань популярным уже сегодня</p>
+			<p class="header__description">Качественное проджижение стрима на <span class="header__description--youtube">YouTube</span></p>
+			<a href="#" class="header__register-link">Регистрация<span> на сайте</span></a>
+		</div>
+	</header>
+	<style>
+		.markup table {
+			width:100%;
+			margin-bottom:20px;
+		}
+			.markup table th {
+				font-weight:bold;
+				text-align:left;
+			}
+			.markup table th, .markup table td {
+				vertical-align:top;
+				border:1px solid #dfe2e5;
+				padding:8px 12px;
+			}
+			.elements td:first-child {
+				width:20%;
+			}
+			.elements td:last-child {
+				width:40%;
+			}
+			.elements td:nth-of-type(2) {
+				width:40%;
+			}
+		.markup h2 {
+			font-weight:300;
+			font-size:2.6rem;
+			margin:20px 0 10px;
+		}
+		.markup code {
+			font-family:"Courier New", Courier, monospace, sans-serif;
+			text-align:left;
+			color:#555;
+			background:#eaeaea;
+			border-radius:3px;
+		}
+			.markup pre {
+				background:#eaeaea;
+			}
+		.markup .overflow {
+			max-width:600px;
+		}
+			.markup .overflow pre {
+				padding:15px 5px;
+				margin:0 0 10px;
+			}
+				.markup .overflow pre:last-child {
+					margin:0;
+				}
+	</style>
+	<div class="full markup">
+		<h2>Основные классы</h2>
+		<table>
+			<tr>
+				<td><code>.tl</code></td>
+				<td>text-align:left</td>
+			</tr>
+			<tr>
+				<td><code>.tc</code></td>
+				<td>text-align:center</td>
+			</tr>
+			<tr>
+				<td><code>.tr</code></td>
+				<td>text-align:right</td>
+			</tr>
+			<tr>
+				<td><code>.rel</code></td>
+				<td>position:relative</td>
+			</tr>
+			<tr>
+				<td><code>.abs</code></td>
+				<td>position:absolute</td>
+			</tr>
+			<tr>
+				<td><code>.hide</code></td>
+				<td>display:none !important</td>
+			</tr>
+		</table>
+		<h2>Подключенные плагины</h2>
+		<ol>
+			<li><a href="http://fancyapps.com/fancybox/3/docs/">jQuery Fancybox</a></li>
+			<li><a href="https://flickity.metafizzy.co/">jQuery Flickity</a></li>
+			<li><a href="https://github.com/mattbryson/TouchSwipe-Jquery-Plugin">jQuery TouchSwipe</a></li>
+		</ol>
+		<h2>Модальные окна</h2>
+		<ul>
+			<li>
+				<a href="#test" class="js-modal">Вызов модального окна</a>
+				<p>Для вызова модального окона необходимо в атрибуте href указать id вызываемого окна, а также добавить класс js-modal для элемента.</p>
+				<p>Если вызов окна идет не с ссылки, а с другого элемента (например с кнопки), тогда заместо атрибута href надо прописать атрибут data-src="#elementID"</p>
+			</li>
+		</ul>
+		<h2>Пасхалка (easter egg)</h2>
+		<p>Двойным кликом по шапке активируется турбо-режим полета</p>
+		<h2>Основные элементы</h2>
+		<table class="elements">
+			<!--
+			<tr>
+				<td><code>.input-text</code></td>
+				<td>
+					<div class="overflow">
+						<pre><code>&lt;input type="text" name="" id="" class="input-text" placeholder="Input text"></code></pre>
+						<pre><code>&lt;input type="email" name="" id="" class="input-text" placeholder="Input email"></code></pre>
+						<p>При указании типа поля email на мобильном устройстве будет вызвана клавиатура для ввода email. Обычно она отличается только наличием символа @</p>
+						<pre><code>&lt;input type="tel" name="" id="" class="input-text" placeholder="Input tel"></code></pre>
+						<pre><code>&lt;input type="number" name="" id="" class="input-text" placeholder="Input number"></code></pre>
+					</div>
+				</td>
+				<td><input type="text" name="" id="" class="input-text" placeholder="Input"></td>
+			</tr>
+			<tr>
+				<td><code>.input-text .input-text--error</code></td>
+				<td>
+					<div class="overflow">
+						<pre><code>&lt;input type="text" name="" id="" class="input-text input-text--error" placeholder="Input text"></code></pre>
+						<pre><code>&lt;input type="email" name="" id="" class="input-text input-text--error" placeholder="Input email"></code></pre>
+						<p>При указании типа поля email на мобильном устройстве будет вызвана клавиатура для ввода email. Обычно она отличается только наличием символа @</p>
+						<pre><code>&lt;input type="tel" name="" id="" class="input-text input-text--error" placeholder="Input tel"></code></pre>
+						<pre><code>&lt;input type="number" name="" id="" class="input-text input-text--error" placeholder="Input number"></code></pre>
+					</div>
+				</td>
+				<td><input type="text" name="" id="" class="input-text input-text--error" placeholder="Error input"></td>
+			</tr>
+			<tr>
+				<td><code>.input-text .input-text--email</code></td>
+				<td>
+					<div class="overflow">
+						<pre><code>&lt;input type="text" name="" id="" class="input-text input-text--email" placeholder="Input text"></code></pre>
+					</div>
+				</td>
+				<td><input type="text" name="" id="" class="input-text input-text--email" placeholder="Input text"></td>
+			</tr>
+			<tr>
+				<td><code>.select</code></td>
+				<td>
+					<div class="overflow">
+						<pre><code>&lt;select name="" id="" class="select">
+	&lt;option value="">Option 1&lt;/option>
+	&lt;option value="">Option 2&lt;/option>
+&lt;/select></code></pre>
+					</div>
+				</td>
+				<td><select name="" id="" class="select">
+					<option value="">Option 1</option>
+					<option value="">Option 2</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><code>.select</code></td>
+				<td>
+					<div class="overflow">
+						<pre><code>&lt;select name="" id="" class="select" data-placeholder="Test message">
+	&lt;option>&lt;/option>
+	&lt;option value="">Option 1&lt;/option>
+	&lt;option value="">Option 2&lt;/option>
+&lt;/select></code></pre>
+					<p>Кроме дата-атрибута необходимо прописать один пустой тег <code>option</code></p>
+					</div>
+				</td>
+				<td><select name="" id="" class="select" data-placeholder="Test message">
+					<option></option>
+					<option value="">Option 1</option>
+					<option value="">Option 2</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><code>.textarea</code></td>
+				<td>
+					<div class="overflow">
+						<pre><code>&lt;textarea name="" id="" cols="30" rows="10" class="textarea" placeholder="Some text">&lt;/textarea></code></pre>
+					</div>
+				</td>
+				<td><textarea name="" id="" cols="30" rows="10" class="textarea" placeholder="Some text"></textarea></td>
+			</tr>
+			-->
+			<tr>
+				<td><code>.btn</code></td>
+				<td>
+					<div class="overflow">
+						<pre><code>&lt;button class="btn">Button&lt;/button></code></pre>
+					</div>
+				</td>
+				<td><button class="btn">Button</button></td>
+			</tr>
+			<tr>
+				<td><code>.btn .btn--blue</code></td>
+				<td>
+					<div class="overflow">
+						<pre><code>&lt;button class="btn btn--blue">Blue button&lt;/button></code></pre>
+					</div>
+				</td>
+				<td><button class="btn btn--blue">Blue button</button></td>
+			</tr>
+			<tr>
+				<td><code>.btn .btn--green</code></td>
+				<td>
+					<div class="overflow">
+						<pre><code>&lt;button class="btn btn--green">Green button&lt;/button></code></pre>
+					</div>
+				</td>
+				<td><button class="btn btn--green">Green button</button></td>
+			</tr>
+			<tr>
+				<td><code>.btn .btn--border</code></td>
+				<td>
+					<div class="overflow">
+						<pre><code>&lt;button class="btn btn--border">Bordered button&lt;/button></code></pre>
+					</div>
+				</td>
+				<td><button class="btn btn--border">Bordered button</button></td>
+			</tr>
+			<tr>
+				<td><code>.btn .btn--fullwidth</code></td>
+				<td>
+					<div class="overflow">
+						<pre><code>&lt;button class="btn btn--fullwidth">Fullwidth button&lt;/button></code></pre>
+					</div>
+				</td>
+				<td><button class="btn btn--fullwidth">Fullwidth button</button></td>
+			</tr>
+			<tr>
+				<td><code>.btn .btn--blue .btn--fullwidth</code></td>
+				<td>
+					<div class="overflow">
+						<pre><code>&lt;button class="btn btn--blue btn--fullwidth">Combined button&lt;/button></code></pre>
+					</div>
+				</td>
+				<td><button class="btn btn--blue btn--fullwidth">Combined button</button></td>
+			</tr>
+			<tr>
+				<td><code>.page-title</code></td>
+				<td>
+					<div class="overflow">
+						<pre><code>&lt;div class="page-title">&lt;span>Заголовок&lt;/span>&lt;/div></code></pre>
+					</div>
+				</td>
+				<td><div class="page-title"><span>Заголовок</span></div></td>
+			</tr>
+		</table>
+	</div>
+	<footer class="footer">
+		<div class="full rel">
+			<a href="#" class="footer__logo"><img src="i/logo.png" alt="streamazer"></a>
+			<div class="footer__copyright">
+				<p>Продвижения Stream-каналов</p>
+				<p>© 2017  streamazer</p>
+			</div>
+			<nav class="footer__nav">
+				<a href="#" class="footer__nav-item">Блог проекта</a>
+				<a href="#" class="footer__nav-item">Интересные статьи</a>
+				<a href="#" class="footer__nav-item">Партнерская программа</a>
+				<a href="#" class="footer__nav-item">Продюсирование</a>
+				<a href="#" class="footer__nav-item">Пользовательское соглашение</a>
+			</nav>
+			<div class="footer__social">
+				<p class="footer__social-title">Мы в соц сетях:</p>
+				<a href="#" class="footer__social-item footer__social-item--vk"></a>
+				<a href="#" class="footer__social-item footer__social-item--twitter"></a>
+				<a href="#" class="footer__social-item footer__social-item--youtube"></a>
+				<a href="#" class="footer__social-item footer__social-item--fb"></a>
+			</div>
+			<div class="footer__payment">
+				<p class="footer__payment-title">Способ оплаты:</p>
+				<img src="i/pay/yandex-money.png" alt="" class="footer__payment-item">
+				<img src="i/pay/webmoney.png" alt="" class="footer__payment-item">
+				<img src="i/pay/qiwi.png" alt="" class="footer__payment-item">
+				<img src="i/pay/alpha-bank.png" alt="" class="footer__payment-item">
+				<img src="i/pay/visa.png" alt="" class="footer__payment-item">
+				<img src="i/pay/sberbank.png" alt="" class="footer__payment-item">
+				<img src="i/pay/maestro.png" alt="" class="footer__payment-item">
+				<img src="i/pay/mastercard.png" alt="" class="footer__payment-item">
+			</div>
+		</div>
+	</footer>
+	<div class="modal" id="test">
+		<div class="modal__text">
+			Для заказа пакета услуг, пожалуйста, зарегистриутесь или авторизируйтесь
+		</div>
+		<div class="modal__btns">
+			<a href="#" class="btn btn--border">Регистрация</a>
+			<a href="#" class="btn btn--border">Вход</a>
+		</div>
+	</div>
+	<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

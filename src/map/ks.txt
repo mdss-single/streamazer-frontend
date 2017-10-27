@@ -1,0 +1,186 @@
+﻿<div id="ks" class=franchise-block future-block present-slide hidden">
+    <h2 class="sc-h2">Краснодарский край</h2>
+    <div class="sc-row row">
+        <div class="sc-col sc-col-3">
+            <p>Численность<br>населения</p>
+            <div class="sc-h4 sc-animated sc-scroll-active"><span class="franchise-people" data-thousand-delimiter=",">2765000</span></div>
+        </div>
+        <div class="sc-col sc-col-3">
+            <p>При оплате в 1 этап финансирования</p>
+            <div class="sc-h4 sc-animated sc-scroll-active"><span class="franchise-fyear" data-thousand-delimiter=" ">1382500</span> <spanclass="sc-statistic-percent-symbol">&#8381;</span></div>
+        </div>
+        <div class="sc-col sc-col-3">
+            <p>При оплате во 2 этап финансирования</p>
+            <div class="sc-h4 sc-animated sc-scroll-active"><span class="franchise-syear" data-thousand-delimiter=" ">5530000</span> <spanclass="sc-statistic-percent-symbol">&#8381;</span></div>
+        </div>
+        <div class="sc-col sc-col-3">
+            <p>При оплате в 3 этап финансирования</p>
+            <div class="sc-h4 sc-animated sc-scroll-active"><span class="franchise-tyear" data-thousand-delimiter=" ">11060000</span> <spanclass="sc-statistic-percent-symbol">&#8381;</span></div>
+        </div>
+    </div>
+    <p class="region-title">Стоимость франшизы для городов:</p>
+    <table class="dividends-table">
+        <tr>
+            <th>Город (население)</th>
+            <th>1-й этап</th>
+            <th>2-й этап</th>
+            <th>3-й этап</th>
+        </tr>
+        <tr>
+            <td>г. Краснодар</td>
+            <td>372500</td>
+            <td>1490000</td>
+            <td>2980000</td>
+        </tr>
+        <tr>
+            <td>г. Анапа</td>
+            <td>29500</td>
+            <td>118000</td>
+            <td>236000</td>
+        </tr>
+        <tr>
+            <td>г. Армавир</td>
+            <td>94500</td>
+            <td>378000</td>
+            <td>756000</td>
+        </tr>
+        <tr>
+            <td>г. Белореченск</td>
+            <td>27000</td>
+            <td>108000</td>
+            <td>216000</td>
+        </tr>
+        <tr>
+            <td>г. Геленджик</td>
+            <td>27500</td>
+            <td>110000</td>
+            <td>220000</td>
+        </tr>
+        <tr>
+            <td>г. Горячий Ключ</td>
+            <td>15000</td>
+            <td>60000</td>
+            <td>120000</td>
+        </tr>
+        <tr>
+            <td>г. Ейск</td>
+            <td>44000</td>
+            <td>176000</td>
+            <td>352000</td>
+        </tr>
+        <tr>
+            <td>г. Кропоткин</td>
+            <td>40500</td>
+            <td>162000</td>
+            <td>324000</td>
+        </tr>
+        <tr>
+            <td>г. Крымск</td>
+            <td>28500</td>
+            <td>114000</td>
+            <td>228000</td>
+        </tr>
+        <tr>
+            <td>г. Лабинск</td>
+            <td>31500</td>
+            <td>126000</td>
+            <td>252000</td>
+        </tr>
+        <tr>
+            <td>г. Новороссийск</td>
+            <td>121000</td>
+            <td>484000</td>
+            <td>968000</td>
+        </tr>
+        <tr>
+            <td>г. Славянск-на-Кубани</td>
+            <td>32000</td>
+            <td>128000</td>
+            <td>256000</td>
+        </tr>
+        <tr>
+            <td>г. Сочи</td>
+            <td>171500</td>
+            <td>686000</td>
+            <td>1372000</td>
+        </tr>
+        <tr>
+            <td>г. Тихорецк</td>
+            <td>31000</td>
+            <td>124000</td>
+            <td>248000</td>
+        </tr>
+        <tr>
+            <td>г. Туапсе</td>
+            <td>31500</td>
+            <td>126000</td>
+            <td>252000</td>
+        </tr>
+        <tr>
+            <td>г. Абинск </td>
+            <td>17500</td>
+            <td>70000</td>
+            <td>140000</td>
+        </tr>
+        <tr>
+            <td>г. Апшеронск </td>
+            <td>20000</td>
+            <td>80000</td>
+            <td>160000</td>
+        </tr>
+        <tr>
+            <td>г. Хадыженск</td>
+            <td>11000</td>
+            <td>44000</td>
+            <td>88000</td>
+        </tr>
+        <tr>
+            <td>г. Гулькевичи </td>
+            <td>17500</td>
+            <td>70000</td>
+            <td>140000</td>
+        </tr>
+        <tr>
+            <td>г. Кореновск </td>
+            <td>20500</td>
+            <td>82000</td>
+            <td>164000</td>
+        </tr>
+        <tr>
+            <td>г. Курганинск </td>
+            <td>24000</td>
+            <td>96000</td>
+            <td>192000</td>
+        </tr>
+        <tr>
+            <td>г. Новокубанск </td>
+            <td>17500</td>
+            <td>70000</td>
+            <td>140000</td>
+        </tr>
+        <tr>
+            <td>г. Приморско-Ахтарск </td>
+            <td>16000</td>
+            <td>64000</td>
+            <td>128000</td>
+        </tr>
+        <tr>
+            <td>г. Темрюк </td>
+            <td>19000</td>
+            <td>76000</td>
+            <td>152000</td>
+        </tr>
+        <tr>
+            <td>г. Тимашевск </td>
+            <td>27000</td>
+            <td>108000</td>
+            <td>216000</td>
+        </tr>
+        <tr>
+            <td>г. Усть-Лабинск </td>
+            <td>21500</td>
+            <td>86000</td>
+            <td>172000</td>
+        </tr>
+    </table>
+</div>

@@ -64,6 +64,8 @@ a
 		right 5%
 		width 20px
 		height @width
+		&--panel
+			top 20px
 		&:before
 		&:after
 			position absolute
@@ -91,6 +93,45 @@ a
 		img
 			filter "progid:DXImageTransform.Microsoft.Dropshadow(OffX=1, OffY=1,Color='#444')"
 			filter drop-shadow(1px 1px 1px rgba(#000, .43))
+	&__avatar
+		position absolute
+		top 8px
+		left 10%
+		width 48px
+		height @width
+		&:before
+			position absolute
+			top 0
+			right 0
+			bottom 0
+			left 0
+			z-index 1
+			background-color #4b4b4b
+			border-radius 50%
+			margin -10px
+			content ''
+		img
+			position relative
+			z-index 2
+			width 100%
+			border 2px solid #bb8e00
+			border-radius 50%
+			box-shadow 0 14px 21px rgba(#846505, .29)
+	&__balance
+		color #fff3cd
+		font-weight 400
+		font-size 1.5rem
+		background-color #4b4b4b
+		border-bottom 1px solid #393939
+		padding 20px 0 10px calc(10% + 60px)
+		&--value
+			color #fff
+			font-weight 700
+	&__btns
+		background-color #4b4b4b
+		border-top 1px solid #6a6a6a
+		border-bottom 1px solid #393939
+		padding 28px 0 22px 10%
 	&__nav
 		border-top 1px solid #6e6e6e
 		padding 10px 10%
@@ -133,6 +174,21 @@ a
 				background-color #d9a501
 				border 0
 				box-shadow 3px 6px 6px rgba(#684e00, .42)
+	&__gohome
+		height 60px
+		background-color #4b4b4b
+		color #bababa
+		font-weight 600
+		font-size 2.1rem
+		text-align center
+		&-link
+			text-decoration underline
+			text-decoration-color #82661d
+			line-height 60px
+			background url('../i/menu__gohome.png') no-repeat 0 center
+			padding-left 34px
+			&:hover
+				text-decoration none
 /*  </menu>  */
 
 /*  <header>  */
@@ -971,5 +1027,254 @@ a
 				display block
 				animation fade .5s
 /*  </faq>  */
+
+/*  <panel>  */
+.header-panel
+	flex-shrink 0
+	height 220px
+	background #070400 url('../i/header-panel-320.png') no-repeat 0 0 / cover
+	&__menu
+		position absolute
+		top 126px
+		left 50%
+		width 162px
+		height 54px
+		color #fff3cd
+		font-weight 600
+		font-size 2.2rem
+		line-height 50px
+		border 2px solid #bb8e00
+		border-radius (@height / 2)
+		padding-left 62px
+		transform translateX(-50%)
+		&:before
+		&:after
+			position absolute
+			top 50%
+			left 32px
+			width 18px
+			content ''
+			transform translateY(-50%)
+		&:before
+			height 17px
+			border solid #bb8e00
+			border-width 3px 0
+		&:after
+			height 3px
+			background-color #bb8e00
+	&__logo
+		position absolute
+		top 25px
+		left 50%
+		width 292px
+		filter drop-shadow(5px 5px 3px rgba(#000, .84))
+		transform translateX(-50%)
+	&__title
+		display none
+	&__balance
+		display none
+	&__btns
+		display none
+	&__avatar
+		display none
+.sidebar
+	display none
+.panel-block
+	border solid #5a5a5a
+	border-width 5px 0
+	margin 20px -15px
+	box-shadow 0 5px 10px rgba(#000, .19)
+	&__title
+		position relative
+		color #fff
+		font-weight 500
+		font-size 2.1rem
+		font-family fontFira
+		text-align center
+		background-color #363636
+		border-bottom 1px solid #2c2c2c
+		padding 15px 50px
+		&--grey
+			color #979797
+	&__help
+		position absolute
+		top 11px
+		right 11px
+		width 28px
+		height 28px
+		background-image url('../i/panel-block__help.png')
+		cursor pointer
+		&:hover
+			&:before
+				display block
+				animation fade .5s
+				position absolute
+				top 0
+				right 0
+				bottom 0
+				left 0
+				background-image url('../i/panel-block__help-active.png')
+		&:before
+			display none
+			content ''
+		span
+			display none
+		&--active
+			background-image url('../i/panel-block__help-active.png')
+			span
+				display block
+				animation fade .5s
+				position absolute
+				top 30px
+				right 0
+				width 300px
+				color #ccc
+				font-weight 400
+				font-size 1.6rem
+				font-family fontFira
+				text-align left
+				background-color #5f5f5f
+				border 2px solid #e6bb32
+				padding 28px 34px
+	&__main
+		background-color #454545
+		border-top 1px solid #5b5a5a
+		padding 22px 15px
+	&__row
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		margin 22px 0
+		&:first-child
+			margin-top 0
+		&:last-child
+			margin-bottom 0
+	&__label
+		width 100%
+		margin-bottom 5px
+		&--center
+			text-align center
+			margin-bottom 14px
+	&__load
+		position relative
+		width 100%
+		padding-right 98px
+		&-links
+			position absolute
+			top 50%
+			right 0
+			transform translateY(-50%)
+	&__link
+		font-size 1.6rem
+		margin 4px 0
+		&-load
+			color #edc23c
+			text-decoration underline
+			text-decoration-color #82661d
+			&:hover
+				text-decoration-color #dba601
+		&-remove
+			position relative
+			color #bbb
+			text-decoration underline
+			text-decoration-color #82661d
+			padding-right 13px
+			&:before
+			&:after
+				position absolute
+				top 50%
+				right -3px
+				width 14px
+				height 1px
+				background-color #c23b3b
+				content ''
+			&:before
+				transform rotate(45deg)
+			&:after
+				transform rotate(-45deg)
+			&:hover
+				text-decoration-color #82661d
+				&:before
+				&:after
+					background-color #e84747
+	&__switcher
+		position absolute
+		left -9999px
+		& + label
+			display block
+			width 45%
+			height 40px
+			color #fff3cd
+			line-height 34px
+			text-align center
+			background-color rgba(#000, .6)
+			border 2px solid #bb8e00
+			border-radius (@height / 2)
+			box-shadow 0 14px 21px rgba(#846505, .29)
+			cursor pointer
+			transition all .2s
+		&:checked + label
+			color #000
+			background-color #fbc10a
+			border-color #fbc10a
+			cursor default
+	&__personal
+		width 100%
+		td
+			color #fff
+			font-weight 600
+			padding 4px 0
+			&:first-child
+				color #ccc
+				font-weight 400
+				font-family fontFira
+		&--tariff
+			color #dda800
+	&__notice
+		position relative
+		color #b6b6b6
+		font-size 1.5rem
+		font-family fontFira
+		background-color #3e3e3e
+		padding 20px 15px 20px 32px
+		margin 20px -15px -22px
+		&:before
+		&:after
+			position absolute
+			left 15px
+			width 3px
+			background-color #a51335
+			content ''
+		&:before
+			top 23px
+			height 36px
+		&:after
+			top 65px
+			height 5px
+		&-red
+			color #e15354
+	&__btns
+		position relative
+		border-top 1px solid #5b5a5a
+		padding 22px 15px 28px
+		&:before
+			position absolute
+			top -2px
+			right 0
+			left 0
+			height 1px
+			background-color #2c2c2c
+			content ''
+		.btn
+			height 50px
+			font-size 1.7rem
+			padding 0 22px
+			&:first-child
+				margin-right 10px
+/*  </panel>  */
 @require "_adaptive.styl"
 @require "_elements.styl"

@@ -9,7 +9,7 @@
 	});
 	$('.header__lang-list').click(function(e) {
 		e.stopPropagation();
-	})
+	});
 
 	// mobile menu
 	$(window).on('load resize', function() {
@@ -50,6 +50,11 @@
 				cellSelector: '.pricing__item',
 				cellAlign: 'left',
 				pageDots: false
+			});
+			$('.js-panel-help').click(function(e) {
+				e.stopPropagation();
+				closeAll();
+				$(this).addClass('panel-block__help--active');
 			});
 		} else {
 			$('body').swipe('destroy');
@@ -102,8 +107,23 @@
 		}, 2000);
 	});
 
+	$('.js-modal').fancybox({
+		touch: false,
+		lang : 'ru',
+		i18n : {
+			'ru' : {
+				CLOSE: 'Закрыть',
+				ERROR: 'Невозможно загрузить данные. Попробуйте еще раз.',
+			}
+		}
+	});
+
+	$('.select, .radio, .checkbox').styler();
+
 	function closeAll() {
+		$('.header__lang--active').removeClass('header__lang--active');
 		$('.header__lang-list--active').removeClass('header__lang-list--active');
+		$('.panel-block__help--active').removeClass('panel-block__help--active');
 	}
 	$(document).click(function() {
 		closeAll();
