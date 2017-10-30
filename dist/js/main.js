@@ -60,6 +60,16 @@
 			$('body').swipe('destroy');
 			$('.header__stars').addClass('header__stars--animate');
 			if ($('.flickity-enabled').length) $('.js-pricing-home').flickity('destroy');
+			$('.js-header-avatar').click(function(e) {
+				e.preventDefault();
+				if (!$('.menu__cover').length) $('body').prepend('<div class="menu__cover header-panel__cover"></div>');
+				$('.header-panel__user').addClass('header-panel__user--active');
+			});
+			$('body').on('click', '.header-panel__cover, .header-panel__user-close', function(e) {
+				e.preventDefault();
+				$('.header-panel__user').removeClass('header-panel__user--active');
+				$('.menu__cover').remove();
+			});
 		}
 	});
 
