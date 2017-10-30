@@ -34,7 +34,7 @@
 					$('html').css('overflow','hidden');
 				},
 				threshold:40,
-				excludedElements:$.fn.swipe.defaults.excludedElements+', .js-pricing',
+				excludedElements:$.fn.swipe.defaults.excludedElements+', .js-pricing, .js-pricing-home, .js-panel-carosel',
 				preventDefaultEvents: false,
 			});
 			$('.menu').swipe({
@@ -119,6 +119,10 @@
 	});
 
 	$('.select, .radio, .checkbox').styler();
+
+	$('.js-panel-carosel').flickity({
+		pageDots: false,
+	});
 
 	function closeAll() {
 		$('.header__lang--active').removeClass('header__lang--active');

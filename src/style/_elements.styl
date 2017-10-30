@@ -101,7 +101,21 @@ fontOpen = 'Open Sans';
 	padding 0 14px
 	transition all .2s
 	&:focus
-		background-color #b1b1b1
+		background-color #ececec
+.textarea
+	width 100%
+	height 100px
+	min-height 100px
+	color #181818
+	font-size 1.5rem
+	background-color #919191
+	border 0
+	border-top 2px solid #8b8b8b
+	padding 10px 14px
+	resize vertical
+	transition background-color .2s
+	&:focus
+		background-color #ececec
 .select
 	width 100%
 /*  </inputs>  */
@@ -168,10 +182,15 @@ fontOpen = 'Open Sans';
 		display -o-flex
 		display flex
 		justify-content space-between
-.col-most
-	width 75%
+		@media screen and (min-width: 768px)
+			justify-content flex-start
 .col-half
 	width 45%
-.col-fourth
-	width 25%
+	@media screen and (min-width: 768px)
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		align-items center
 /*  </grid>  */
