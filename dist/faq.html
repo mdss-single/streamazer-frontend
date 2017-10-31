@@ -166,12 +166,17 @@
 		</div>
 		<div class="modal__body">
 			<div class="form__row">
-				<label for="reg1" class="form__label">E-mail</label>
-				<input type="email" name="" id="reg1" class="input-text" placeholder="Введите email">
+				<label for="auth1" class="form__label">E-mail</label>
+				<input type="email" name="" id="auth1" class="input-text" placeholder="Введите email">
 			</div>
 			<div class="form__row">
-				<label for="reg2" class="form__label">Пароль</label>
-				<input type="password" name="" id="reg2" class="input-text" placeholder="Введите пароль">
+				<label for="auth2" class="form__label">Пароль</label>
+				<input type="password" name="" id="auth2" class="input-text" placeholder="Введите пароль">
+			</div>
+			<div class="form__row panel-settings__system">
+				<input type="checkbox" name="" id="auth3" class="modal__checkbox">
+				<label for="auth3">Запомнить меня</label>
+				<a href="#" class="modal__forgot">Забылили пароль?</a>
 			</div>
 		</div>
 		<div class="modal__btns">
@@ -195,6 +200,19 @@
 			<div class="form__row">
 				<label for="reg3" class="form__label">Повторите пароль</label>
 				<input type="password" name="" id="reg3" class="input-text" placeholder="Повторите пароль">
+			</div>
+			<div class="form__row">
+				%recapcha code%
+			</div>
+			<div class="form__row panel-settings__system">
+				<div>
+					<input type="checkbox" name="" id="reg4" class="modal__checkbox">
+					<label for="reg4">Согласен с <a href="#">пользовательским соглашением</a></label>
+				</div>
+				<div>
+					<input type="checkbox" name="" id="reg5" class="modal__checkbox">
+					<label for="reg5">Подписаться на рассылку</label>
+				</div>
 			</div>
 		</div>
 		<div class="modal__btns">
