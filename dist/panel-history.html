@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Streamazer</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400,500,600|Open+Sans:400,600,700&amp;subset=cyrillic">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/plugins.css">
+</head>
+<body>
+	<div class="full rel">
+		<div class="header-panel__user">
+			<a href="#" class="header-panel__user-close"></a>
+			<div class="header-panel__user-name">steamuser1</div>
+			<div class="header-panel__user-links">
+				<a href="#" class="header-panel__user-settings">Настройки</a>
+				<a href="#" class="header-panel__user-logout">Выход</a>
+			</div>
+		</div>
+	</div>
+	<div class="menu">
+		<a href="#" class="menu__close menu__close--panel"></a>
+		<div class="menu__avatar"><img src="i/avatar.jpg" alt="%username%"></div>
+		<div class="menu__balance">Ваш баланс: <span class="menu__balance--value">100 руб.</span></div>
+		<div class="menu__btns">
+			<a href="#" class="btn btn--small btn--border menu__btn-plus">пополнить</a>
+			<a href="#" class="btn btn--small btn--border menu__btn-minus">вывести</a>
+		</div>
+		<nav class="menu__nav">
+			<a href="#" class="menu__nav-item">Панель управления</a>
+			<a href="#" class="menu__nav-item">Тарифы</a>
+			<a href="#" class="menu__nav-item">История платежей</a>
+			<a href="#" class="menu__nav-item">Бонусы и акции</a>
+			<a href="#" class="menu__nav-item">Новости проекта</a>
+			<a href="#" class="menu__nav-item">Персональное предложение</a>
+			<a href="#" class="menu__nav-item">Партнерская программа</a>
+			<a href="#" class="menu__nav-item">Продюсирование</a>
+			<a href="#" class="menu__nav-item">FAQ</a>
+			<a href="#" class="menu__nav-item">Пользовательское соглашение</a>
+		</nav>
+		<div class="menu__gohome"><a href="#" class="menu__gohome-link">На главную</a></div>
+	</div>
+	<header class="header-panel">
+		<div class="full header__main">
+			<a href="#" class="header-panel__menu js-menu-link">Меню</a>
+			<a href="#" class="header-panel__logo"><img src="i/logo.png" alt="streamazer"></a>
+			<p class="header-panel__title" data-header-panel="Панель управления">Панель управления</p>
+			<p class="header-panel__balance">Ваш баланс: <span class="header-panel__balance--value">100 руб.</span></p>
+			<div class="header-panel__btns">
+				<a href="#" class="btn btn--small btn--border menu__btn-plus">пополнить</a>
+				<a href="#" class="btn btn--small btn--border menu__btn-minus">вывести</a>
+			</div>
+			<img src="i/avatar.jpg" alt="%username%" class="header-panel__avatar js-header-avatar">
+		</div>
+	</header>
+	<main class="main page-background">
+		<div class="full panel-wrap">
+			<aside class="sidebar">
+				<nav class="aside__nav">
+					<a href="#" class="aside__nav-item aside__nav-item--active">Панель управления</a>
+					<a href="#" class="aside__nav-item">Тарифы</a>
+					<a href="#" class="aside__nav-item">История платежей</a>
+					<a href="#" class="aside__nav-item">Бонусы и акции</a>
+					<a href="#" class="aside__nav-item">Новости проекта</a>
+					<a href="#" class="aside__nav-item">Персональное предложение <span class="aside__nav-item--yellow">(+1)</span></a>
+					<a href="#" class="aside__nav-item">Партнерская программа</a>
+					<a href="#" class="aside__nav-item">Продюсирование</a>
+				</nav>
+				<div class="aside__btns">
+					<button class="aside__btn aside__btn--home">На главную</button>
+					<button class="aside__btn aside__btn--faq">FAQ</button>
+					<a href="#" class="aside__terms-of-use">Пользовательское соглашение</a>
+				</div>
+				<div class="aside__copyright">© 2017  streamazer.com</div>
+			</aside>
+			<div class="content">
+				<div class="panel__inner">
+					<div class="page-title"><span>История операций</span></div>
+					<div class="panel-partner">
+						<table class="panel-partner__table">
+							<thead>
+								<tr>
+									<th>Назначение платежа</th>
+									<th>Сумма</th>
+									<th>Время и дата</th>
+									<th>Метод оплаты</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-label="Назначение платежа"><span>Оплата тариф “Старт” (1 сутки)</span></td>
+									<td data-label="Сумма"><span>200 руб.</span></td>
+									<td data-label="Время и дата"><span>20:37:14 25/10/2017</span></td>
+									<td data-label="Метод оплаты"><span>Free-Kassa</span></td>
+								</tr>
+								<tr>
+									<td data-label="Назначение платежа"><span>Пополнение лицевого счета</span></td>
+									<td data-label="Сумма"><span>1000 руб.</span></td>
+									<td data-label="Время и дата"><span>21:37:14 30/10/2017</span></td>
+									<td data-label="Метод оплаты"><span>Free-Kassa</span></td>
+								</tr>
+								<tr>
+									<td data-label="Назначение платежа"><span>Вывод средств</span></td>
+									<td data-label="Сумма"><span>100 руб.</span></td>
+									<td data-label="Время и дата"><span>21:37:14 30/10/2017</span></td>
+									<td data-label="Метод оплаты"><span>Free-Kassa</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="full rel">
+			<a href="#" class="footer__logo"><img src="i/logo.png" alt="streamazer"></a>
+			<div class="footer__copyright">
+				<p>Продвижения Stream-каналов</p>
+				<p>© 2017  streamazer</p>
+			</div>
+			<nav class="footer__nav">
+				<a href="#" class="footer__nav-item">Блог проекта</a>
+				<a href="#" class="footer__nav-item">Интересные статьи</a>
+				<a href="#" class="footer__nav-item">Партнерская программа</a>
+				<a href="#" class="footer__nav-item">Продюсирование</a>
+				<a href="#" class="footer__nav-item">Пользовательское соглашение</a>
+			</nav>
+			<div class="footer__social">
+				<p class="footer__social-title">Мы в соц сетях:</p>
+				<a href="#" class="footer__social-item footer__social-item--vk"></a>
+				<a href="#" class="footer__social-item footer__social-item--twitter"></a>
+				<a href="#" class="footer__social-item footer__social-item--youtube"></a>
+				<a href="#" class="footer__social-item footer__social-item--fb"></a>
+			</div>
+			<div class="footer__payment">
+				<p class="footer__payment-title">Способ оплаты:</p>
+				<img src="i/pay/yandex-money.png" alt="" class="footer__payment-item">
+				<img src="i/pay/webmoney.png" alt="" class="footer__payment-item">
+				<img src="i/pay/qiwi.png" alt="" class="footer__payment-item">
+				<img src="i/pay/alpha-bank.png" alt="" class="footer__payment-item">
+				<img src="i/pay/visa.png" alt="" class="footer__payment-item">
+				<img src="i/pay/sberbank.png" alt="" class="footer__payment-item">
+				<img src="i/pay/maestro.png" alt="" class="footer__payment-item">
+				<img src="i/pay/mastercard.png" alt="" class="footer__payment-item">
+			</div>
+		</div>
+	</footer>
+	<div class="modal" id="test">
+		<div class="modal__text">
+			Для заказа пакета услуг, пожалуйста, зарегистриутесь или авторизируйтесь
+		</div>
+		<div class="modal__btns">
+			<a href="#" class="btn btn--border">Регистрация</a>
+			<a href="#" class="btn btn--border">Вход</a>
+		</div>
+	</div>
+	<div class="modal" id="auth">
+		<div class="modal__text">
+			Вход
+		</div>
+		<div class="modal__body">
+			<div class="form__row">
+				<label for="reg1" class="form__label">E-mail</label>
+				<input type="email" name="" id="reg1" class="input-text" placeholder="Введите email">
+			</div>
+			<div class="form__row">
+				<label for="reg2" class="form__label">Пароль</label>
+				<input type="password" name="" id="reg2" class="input-text" placeholder="Введите пароль">
+			</div>
+		</div>
+		<div class="modal__btns">
+			<a href="#" class="btn btn--border">Вход</a>
+			<a href="#register" class="btn btn--border js-modal">Регистрация</a>
+		</div>
+	</div>
+	<div class="modal" id="register">
+		<div class="modal__text">
+			Регистрация на сайте
+		</div>
+		<div class="modal__body">
+			<div class="form__row">
+				<label for="reg1" class="form__label">E-mail</label>
+				<input type="email" name="" id="reg1" class="input-text" placeholder="Введите email">
+			</div>
+			<div class="form__row">
+				<label for="reg2" class="form__label">Пароль</label>
+				<input type="password" name="" id="reg2" class="input-text" placeholder="Введите пароль">
+			</div>
+			<div class="form__row">
+				<label for="reg3" class="form__label">Повторите пароль</label>
+				<input type="password" name="" id="reg3" class="input-text" placeholder="Повторите пароль">
+			</div>
+		</div>
+		<div class="modal__btns">
+			<a href="#" class="btn btn--border">Регистрация</a>
+			<a href="#auth" class="btn btn--border js-modal">Вход</a>
+		</div>
+	</div>
+	<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

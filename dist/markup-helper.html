@@ -17,8 +17,8 @@
 			<a href="#" class="menu__nav-item">FAQ</a>
 			<a href="#" class="menu__nav-item">Тарифы</a>
 			<a href="#" class="menu__nav-item">Контакты</a>
-			<a href="#" class="menu__nav-item">Вход</a>
-			<a href="#" class="menu__nav-item">Регистрация</a>
+			<a href="#auth" class="menu__nav-item js-modal">Вход</a>
+			<a href="#register" class="menu__nav-item js-modal">Регистрация</a>
 		</nav>
 		<div class="menu__lang">
 			<a href="#" class="menu__lang-item menu__lang-item--active">ru</a>
@@ -43,10 +43,10 @@
 					<a href="#" class="header__lang-item">en</a>
 				</div>
 			</div>
-			<a href="#" class="header__login-link">Вход</a>
+			<a href="#auth" class="header__login-link js-modal">Вход</a>
 			<p class="header__slogan">Стань популярным уже сегодня</p>
 			<p class="header__description">Качественное проджижение стрима на <span class="header__description--youtube">YouTube</span></p>
-			<a href="#" class="header__register-link">Регистрация<span> на сайте</span></a>
+			<a href="#register" class="header__register-link js-modal">Регистрация<span> на сайте</span></a>
 		</div>
 	</header>
 	<style>
@@ -131,6 +131,7 @@
 			<li><a href="http://fancyapps.com/fancybox/3/docs/">jQuery Fancybox</a></li>
 			<li><a href="https://flickity.metafizzy.co/">jQuery Flickity</a></li>
 			<li><a href="https://github.com/mattbryson/TouchSwipe-Jquery-Plugin">jQuery TouchSwipe</a></li>
+			<li><a href="http://dimox.name/jquery-form-styler/">jQuery Form Styler</a></li>
 		</ol>
 		<h2>Модальные окна</h2>
 		<ul>
@@ -138,6 +139,9 @@
 				<a href="#test" class="js-modal">Вызов модального окна</a>
 				<p>Для вызова модального окона необходимо в атрибуте href указать id вызываемого окна, а также добавить класс js-modal для элемента.</p>
 				<p>Если вызов окна идет не с ссылки, а с другого элемента (например с кнопки), тогда заместо атрибута href надо прописать атрибут data-src="#elementID"</p>
+			</li>
+			<li>
+				<a href="#register" class="js-modal">Вызов окна регистрации</a>
 			</li>
 		</ul>
 		<h2>Пасхалка (easter egg)</h2>
@@ -332,6 +336,48 @@
 		<div class="modal__btns">
 			<a href="#" class="btn btn--border">Регистрация</a>
 			<a href="#" class="btn btn--border">Вход</a>
+		</div>
+	</div>
+	<div class="modal" id="auth">
+		<div class="modal__text">
+			Вход
+		</div>
+		<div class="modal__body">
+			<div class="form__row">
+				<label for="reg1" class="form__label">E-mail</label>
+				<input type="email" name="" id="reg1" class="input-text" placeholder="Введите email">
+			</div>
+			<div class="form__row">
+				<label for="reg2" class="form__label">Пароль</label>
+				<input type="password" name="" id="reg2" class="input-text" placeholder="Введите пароль">
+			</div>
+		</div>
+		<div class="modal__btns">
+			<a href="#" class="btn btn--border">Вход</a>
+			<a href="#register" class="btn btn--border js-modal">Регистрация</a>
+		</div>
+	</div>
+	<div class="modal" id="register">
+		<div class="modal__text">
+			Регистрация на сайте
+		</div>
+		<div class="modal__body">
+			<div class="form__row">
+				<label for="reg1" class="form__label">E-mail</label>
+				<input type="email" name="" id="reg1" class="input-text" placeholder="Введите email">
+			</div>
+			<div class="form__row">
+				<label for="reg2" class="form__label">Пароль</label>
+				<input type="password" name="" id="reg2" class="input-text" placeholder="Введите пароль">
+			</div>
+			<div class="form__row">
+				<label for="reg3" class="form__label">Повторите пароль</label>
+				<input type="password" name="" id="reg3" class="input-text" placeholder="Повторите пароль">
+			</div>
+		</div>
+		<div class="modal__btns">
+			<a href="#" class="btn btn--border">Регистрация</a>
+			<a href="#auth" class="btn btn--border js-modal">Вход</a>
 		</div>
 	</div>
 	<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>

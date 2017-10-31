@@ -41,6 +41,48 @@
 			<a href="#" class="btn btn--border">Вход</a>
 		</div>
 	</div>
+	<div class="modal" id="auth">
+		<div class="modal__text">
+			Вход
+		</div>
+		<div class="modal__body">
+			<div class="form__row">
+				<label for="reg1" class="form__label">E-mail</label>
+				<input type="email" name="" id="reg1" class="input-text" placeholder="Введите email">
+			</div>
+			<div class="form__row">
+				<label for="reg2" class="form__label">Пароль</label>
+				<input type="password" name="" id="reg2" class="input-text" placeholder="Введите пароль">
+			</div>
+		</div>
+		<div class="modal__btns">
+			<a href="#" class="btn btn--border">Вход</a>
+			<a href="#register" class="btn btn--border js-modal">Регистрация</a>
+		</div>
+	</div>
+	<div class="modal" id="register">
+		<div class="modal__text">
+			Регистрация на сайте
+		</div>
+		<div class="modal__body">
+			<div class="form__row">
+				<label for="reg1" class="form__label">E-mail</label>
+				<input type="email" name="" id="reg1" class="input-text" placeholder="Введите email">
+			</div>
+			<div class="form__row">
+				<label for="reg2" class="form__label">Пароль</label>
+				<input type="password" name="" id="reg2" class="input-text" placeholder="Введите пароль">
+			</div>
+			<div class="form__row">
+				<label for="reg3" class="form__label">Повторите пароль</label>
+				<input type="password" name="" id="reg3" class="input-text" placeholder="Повторите пароль">
+			</div>
+		</div>
+		<div class="modal__btns">
+			<a href="#" class="btn btn--border">Регистрация</a>
+			<a href="#auth" class="btn btn--border js-modal">Вход</a>
+		</div>
+	</div>
 	<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>

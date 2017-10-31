@@ -56,6 +56,11 @@
 				closeAll();
 				$(this).addClass('panel-block__help--active');
 			});
+			$('.menu .js-modal').click(function(e) {
+				e.preventDefault();
+				$(menu).removeClass('menu--active');
+				$('.menu__cover').remove();
+			});
 		} else {
 			$('body').swipe('destroy');
 			$('.header__stars').addClass('header__stars--animate');
@@ -117,6 +122,10 @@
 		}, 2000);
 	});
 
+	$('.js-modal').click(function(e) {
+		e.preventDefault();
+		$.fancybox.close();
+	});
 	$('.js-modal').fancybox({
 		touch: false,
 		lang : 'ru',
