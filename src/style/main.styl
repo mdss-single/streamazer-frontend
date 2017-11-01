@@ -1477,10 +1477,20 @@ a
 		@media screen and (min-width:1200px)
 			background-color transparent
 	@media screen and (min-width:1200px)
-		.pricing__section-title span::after
-			right auto
-			left calc(100% + 30px)
-			width 240px
+		.pricing__section-title
+			font-size 2.8rem
+			span
+				&:after
+					right auto
+					left calc(100% + 30px)
+					width 260px
+		.pricing__item-icon
+			width 58px
+			height @width
+			line-height 54px
+			img
+				max-width 36px
+				max-height 34px
 		.pricing__item-name
 			font-size 2.1rem
 			&--period
@@ -1499,6 +1509,8 @@ a
 			font-size 1.6rem
 			line-height 36px
 			padding 0 30px
+		.pricing__list .flickity-prev-next-button
+			top -67px
 /*  </panel>  */
 @require "_adaptive.styl"
 @require "_elements.styl"
